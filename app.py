@@ -17,9 +17,12 @@ import google.generativeai as genai
 genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
 
 def get_gemini_response(input,pdf_content,prompt):
-       model=genai.GenerativeModel('models/gemini-1.0-pro-vision-latest')
-       response=model.generate_content([input,pdf_content[0],prompt])
-       return response.text
+       model=genai.GenerativeModel('gemini-1.5-flash')
+       if not pdf_content or len(pdf_content) == 0:
+            st.error("Error: PDF content is empty!")
+       else:
+           response = model.generate_content([input, pdf_content[0], prompt])
+           return response.text
 
 def input_pdf_setup(uploaded_file):
        if uploaded_file is not None:
