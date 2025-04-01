@@ -3,7 +3,7 @@
 🚀 Overview
 
 Welcome to ATS Tracker AI! 🎯 This project is designed to help job seekers optimize their resumes for Applicant Tracking Systems (ATS). 
-This AI-powered tool analyzes resumes and provides actionable insights to improve their chances of passing ATS filters and landing interviews! 💼✨
+This AI-powered tool analyzes resumes and provides actionable insights to improve their chances of passing ATS filters and landing interviews! 
 
 🏆 Features
 
