@@ -1,5 +1,4 @@
 📄 ATS Tracker AI
-
 🚀 Overview
 
 Welcome to ATS Tracker AI! 🎯 This project is designed to help job seekers optimize their resumes for Applicant Tracking Systems (ATS). 
