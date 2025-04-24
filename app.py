@@ -49,11 +49,25 @@ def input_pdf_setup(uploaded_file):
 
 
 #streamlit APP
+st.set_page_config(page_title="🚀 ATS Resume Expert", page_icon="📄", layout="centered")
 
-st.set_page_config(page_title="ATS Resume Expert")
-st.header("ATS Tracking System")
-input_text=st.text_area("Job Discription: ",key="input")
-uploaded_file= st.file_uploader("Upload your resume(PDF)...", type=["pdf"])
+# Custom styled header
+st.markdown(
+    "<h1 style='color: #4CAF50; text-align: center;'>📊 ATS Tracking System</h1>",
+    unsafe_allow_html=True
+)
+
+# Job Description input
+st.markdown(" 📝 Paste the Job Description Below:")
+input_text = st.text_area(" ", key="input", placeholder="Enter the job description here...")
+
+# Resume Upload
+st.markdown(" 📤 Upload Your Resume (PDF Format Only)")
+uploaded_file = st.file_uploader("Choose a file...", type=["pdf"])
+
+# Optional: Display file name when uploaded
+if uploaded_file is not None:
+    st.success(f"✅ Uploaded: `{uploaded_file.name}`")
 
 
 if uploaded_file is not None:
