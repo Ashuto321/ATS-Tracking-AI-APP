@@ -2,7 +2,6 @@
 
 Try demo: https://ats-tracking-ai-app-ashutoh-pandey.streamlit.app/
 
-
 🚀 Introduction to project:
 
 Welcome to ATS Tracker AI! 🎯 This project is designed to help job seekers optimize their resumes for Applicant Tracking Systems (ATS). 
